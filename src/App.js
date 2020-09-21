@@ -1,9 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Pokecard from './Pokecard.js';
 import './App.css';
 
-function App() {
-  return <div className="App"></div>;
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Pokecard id={4} name="Charmander" type="fire" exp={62} />
+      </div>
+    );
+  }
 }
 
 export default App;
